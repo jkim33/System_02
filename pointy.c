@@ -8,8 +8,8 @@
 
 int main() {
 
-  unsigned int integer = 2345345345;
-  char *pointer = &integer;
+  unsigned int integer = 2200000000;
+  char * pointer = &integer;
 
   printf("integer in hex: %x\n\n", integer);
 
@@ -23,7 +23,7 @@ int main() {
 
   for (int ii = 0; ii < 4; ii++) {
     *pointer += 1;
-    printf("increment(1) %d: %x, %d\n", ii, *pointer, *pointer);
+    printf("increment(1) %d: %x, %u\n", ii, integer, integer);
     pointer++;
   }
 
@@ -32,7 +32,7 @@ int main() {
   
   for (int iii = 0; iii < 4; iii++) {
     *pointer += 16;
-    printf("increment(16) %d: %x, %d\n", iii, *pointer, *pointer);
+    printf("increment(16) %d: %x, %u\n", iii, integer, integer);
     pointer++;
   }
 
